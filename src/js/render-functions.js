@@ -1,4 +1,4 @@
-// src/js/render-functions.js
+
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
@@ -35,7 +35,6 @@ img => `
 .join('');
 
 
-// Додаємо всі нові елементи за одну операцію
 refs.gallery.insertAdjacentHTML('beforeend', markup);
 lightbox.refresh();
 }
