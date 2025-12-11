@@ -16,3 +16,73 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+:root {
+  transition: opacity .2s ease;
+}
+
+
+.loader.visible {
+  opacity: 1
+}
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+
+.gallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.gallery-item {
+  background: var(--card);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+
+.gallery-link {
+  display: block
+}
+
+.gallery-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px;
+  font-size: 13px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+
+
+.info p {
+  margin: 0
+}
+
+
+@media (max-width:600px) {
+  .gallery-image {
+    height: 120px
+  }
+}
