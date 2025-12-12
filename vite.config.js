@@ -1,9 +1,14 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/goit-js-hw-12/',
+  root: 'src',           
+  base: '/goit-js-hw-12/', 
   build: {
-    outDir: 'dist',
-    emptyOutDir: true,
+    outDir: '../dist',  
+    emptyOutDir: true,   
+  },
+  server: {
+    port: 3000,
+    open: true,
   },
 });
