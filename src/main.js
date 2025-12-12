@@ -14,7 +14,7 @@ let evtType = '';
 
 const IMAGE_MAX_COUNT = 15;
 
-const form = document.querySelector('.search-form');
+const form = document.querySelector('.form');
 const gallery = document.querySelector('.gallery');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 
