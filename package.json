@@ -13,6 +13,7 @@
     "simplelightbox": "^2.14.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "glob": "^13.0.0",
     "postcss-sort-media-queries": "^5.2.0",
     "prettier": "^3.3.3",
